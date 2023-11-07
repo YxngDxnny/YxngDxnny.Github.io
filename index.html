@@ -3,38 +3,594 @@
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Home</title>
+
+        <!--<link rel="stylesheet" href="./css/bootstrap.css">-->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-        <link rel="stylesheet" href="~/css/BootSwatchTheme.css"/>
+    
+        <link rel="stylesheet" href="./css/site.css" asp-append-version="true" />
+        
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
         <link href='https://fonts.googleapis.com/css?family=Cabin' rel='stylesheet'type='text/css'>
         <link href='https://fonts.googleapis.com/css?family=DM+Serif+Display' rel='stylesheet' type='text/css'>
         <link href='https://fonts.googleapis.com/css?family=Satisfy' rel='stylesheet' type='text/css'>
+        
     </head>
 
     <body>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div id="siteWrapper">
+        <header class="header">
+          
+          <nav class="navbar navbar-expand-lg bg-yellow sticky-lg-top">
             <div class="container d-flex">
-              <a class="navbar-brand w-25" href="#">Uchenna Eni</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <a class="navbar-brand w-50" href="./index.html" style="font-size: 1.8em"><span class="font-dm-serif-display">Uchenna </span> <span class="font-satisfy">Eni</span></a>
+             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
-              <div class="collapse navbar-collapse w-75 d-flex justify-content-end" id="navbarNav">
-                <ul class="navbar-nav">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav d-flex justify-content-end w-100 align-items-center">
+                  <li class="nav-item w-25">
+                    <a class="nav-link" href="./Portfolio.html">Portfolio</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Portfolio</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">About</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
+                    <a class="nav-link btn btn-outline-filled" href="./files/Uchenna CV.pdf" target="_blank">Download CV</a>
                   </li>
                 </ul>
               </div>
             </div>
           </nav>
-    </body>
-  </html>
+
+        </header>
+        
+
+          <main role="main" class="container-fluid mb-5">
+
+            <section class="container-fluid" style="min-height: 650px;" id="homeHeroSection">
+                <div class="row py-4" style="min-height: 650px;">
+
+                  <div class="col-lg-6 d-flex d-flex justify-content-center align-items-center order-lg-2">
+                    <div class="circle-500 d-flex justify-content-center align-items-center  dp-holder">
+
+                      <img src="./images/Vector Portrait-01.png" style="width:100%; height:contain; object-fit: cover;"  class="dp-2"/>
+
+                      <img src="./images/Profile Picture.png" style="width:100%; height:contain; object-fit: cover;" class="dp-1"/>
+
+                    </div>
+                </div>
+
+                  <div class="col-lg-6 p-5 d-flex justify-content-center align-items-center order-lg-1">
+                    <div class="text-center hero-anim-box" style="max-width: 300px;">
+                      <div class="slide-reveal-box">
+                        <h1 class="bg-yellow p-2 text-dark font-satisfy slide-up-reveal hero-anim hide no-anim" style="font-size: 7em;">Hello!</h1>
+                      </div>
+
+                      <div class="slide-reveal-box">
+                        <h1 class="text-yellow h1 text-uppercase slide-down-reveal hero-anim hide no-anim" style="font-size: 3em;">I'm Uchenna</h1>
+                      </div>
+
+                      <div class="slide-reveal-box">
+                        <p class="text-white mb-5 slide-down-reveal hero-anim hide no-anim">A Full-Stack Web Developer, Graphics Designer & Software Engineer</p>
+                      </div>
+                      
+                      <div class="slide-reveal-box">
+                        <p class="text-white slide-up-reveal hero-anim hide no-anim" style="font-size: .8em;">I'm available to Freelance, Call, Send a Text, or Chat with me on Whatsapp to request a quote</p>
+                      </div>
+                      
+                      <div class="slide-reveal-box">
+                        <div class="d-flex justify-content-center w-100 slide-down-reveal hero-anim hide no-anim py-3">
+                          <a href="tel: +2348159969678" class="bg-dark mx-3 d-flex justify-content-center align-items-center btn-circle-sm">
+                            <i class="bi bi-telephone text-white"></i>
+                          </a>
+                          <a href="https://wa.me/+2348159969678" class="bg-dark mx-3 d-flex justify-content-center align-items-center btn-circle-sm">
+                            <i class="bi bi-whatsapp text-white"></i>
+                          </a>
+                        </div>  
+                      </div>
+                      
+                    </div>
+                  </div>
+                 
+                </div>
+            </section>
+
+            <section class="container py-5" style="min-height: 600px;">      
+
+              <div class="row " style="min-height: 600px;">
+
+                <div class="col-lg-6 px-1 text-center d-flex flex-column align-items-center">
+                  <table class="w-100 table-bordered table-striped text-center">
+                    <thead>
+                      <tr>
+                        <th colspan="2">Personal Information</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th>Full Name</th>
+                        <td>Uchenna Eni</td>
+                      </tr>
+                      <tr>
+                        <th>Age</th>
+                        <td>26</td>
+                      </tr>
+                      <tr>
+                        <th>Residence</th>
+                        <td>Ajah, Lagos, Nigeria</td>
+                      </tr>
+                      <tr>
+                        <th>Telephone</th>
+                        <td><a href="tel:+2348159969678">+234 815 996 9678</a></td>
+                      </tr>
+                      <tr>
+                        <th>Email</th>
+                        <td><a href="mailto:eniuchenna@gmail.com">eniuchenna@gmail.com</a></td>
+                      </tr>
+                      <tr>
+                        <th>Socials </th>
+                        <td>
+                          <a href="https://www.facebook.com/uchenna.eni.3" class="btn-circle-sm-filled" target="_blank"><i class="bi bi-facebook"></i></a>
+                          <a href="https://twitter.com/Yxng_Dxnny" class="btn-circle-sm-filled" target="_blank"><i class="bi bi-twitter"></i></a>
+                          <a href="https://www.linkedin.com/in/uchenna-eni-5ba349236/" class="btn-circle-sm-filled" target="_blank"><i class="bi bi-linkedin"></i></a>
+                          <a href="https://github.com/YxngDxnny" class="btn-circle-sm-filled" target="_blank"><i class="bi bi-github"></i></a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th>Freelance</th>
+                        <td class="text-success">Available</td>
+                      </tr>
+                      <tr>
+                        <th>Full-Time/PartTime Employment</th>
+                        <td class="text-success">Available</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+
+                <div class="col-lg-6 px-3 text-center d-flex flex-column align-items-center justify-content-start">
+                    <div class="text-center mb-3">
+                      <h2 class="fw-bold mb-2">About Me</h2>
+                      <h5 class="text-yellow">I have real a passion for creating.</h5>
+                    </div>
+
+                    <p class="mb-5">
+                      Welcome to my digital realm! I'm Uchenna Eni, and I'm passionate about crafting innovative solutions that breathe life into digital landscapes. With a Bachelor's degree in Information Technology from Sikkim Manipal University in India, I've honed my skills as a versatile full-stack web developer, software engineer, and graphics designer.
+                      <br>
+                      <br>
+                      What sets me apart? It's my unwavering enthusiasm to create distinctive, functional ideas and solutions for a diverse clientele. I thrive on turning your visions into reality, and I take pride in making your digital dreams a vivid, tangible experience.
+                      <br>
+                      <br>
+                      Whether it's building dynamic websites, engineering software solutions, or infusing creativity into graphics, I'm here to transform your concepts into compelling, user-friendly, and visually captivating realities.
+                      <br>
+                      <br>
+                      Let's collaborate, innovate, and bring your ideas to life. Your digital journey begins here.
+                    </p>
+
+                    <a class="btn btn-outline-filled" href="./Portfolio.html">View My Portfolio</a>
+                    
+                </div>
+
+              </div>
+            </section>
+
+            <section class="container-fluid py-5 bg-yellow" style="min-height: 600px;">   
+              
+                <div class="container">
+
+                  <div class="row" style="min-height: 600px;">
+
+                    <div class="col-lg-3 d-flex flex-column align-items-end justify-content-center">
+                      
+                      <div class="services-anim-box">
+                        <div class="slide-reveal-box">
+                          <h2 class="bg-dark text-yellow p-3 slide-up-reveal hide no-anim services-anim d-inline-block" style="font-size: 75px;" class="fw-bolder">My</h2><br>
+                        </div>
+  
+                        <div class="slide-reveal-box">
+                          <h2 class="font-dm-serif-display text-white services-anim slide-down-reveal hide no-anim d-inline-block" style="font-size: 75px;" class="fw-bolder">Services</h2>
+                        </div>
+                      </div>
+                      
+
+                      <div class="slide-reveal-box">
+                        <p class="fw-bolder text-uppercase text-end services-anim slide-down-reveal hide no-anim">What I Offer</p>
+                      </div>
+
+                    </div>
+                    
+                    <div class="col-lg-9">
+
+                      <div class="row text-center spin-and-color-invert-holder px-5">
+
+                        <div class="col-lg-6 p-5 h-100 d-flex flex-column align-items-center spin-and-color-invert" style="min-height: 500px;">
+                          <div class="circle-150 mb-5 d-flex justify-content-center align-items-center saci-icon-box  floating-origin">
+                            <i class="bi bi-globe saci-icon" style="font-size: 100px;"></i>
+                          </div>
+                          <div class="floating circle-50 bg-white text-center fw-bold font-dm-serif-display" style="position: absolute;">
+                             +2 Years
+                          </div>
+                          <h5 class="mb-5 text-uppercase fw-bold saci-title">Web Development</h3>
+                          <p class="saci-text">
+                            Whether you need a sleek and responsive website, a powerful e-commerce platform, or a dynamic web application.  
+                          </p>
+                        </div>
+
+                        <div class="col-lg-6 p-5 h-100 d-flex flex-column align-items-center spin-and-color-invert" style="min-height: 500px;">
+                          <div class="circle-150 mb-5 d-flex justify-content-center align-items-center saci-icon-box floating-origin">
+                            <i class="bi bi-phone saci-icon" style="font-size: 100px;"></i>
+                          </div>
+                          <div class="floating circle-50 bg-white text-center fw-bold font-dm-serif-display" style="position: absolute;">
+                            +3 Years
+                         </div>
+                          <h5 class="mb-5 text-uppercase fw-bold saci-title">App Development</h3>
+                          <p class="saci-text">
+                            Whether you're looking for iOS, Android, Desktop or Cross-Platform apps.
+                          </p>
+                        </div>
+
+                        <div class="col-lg-6 p-5 h-100 d-flex flex-column align-items-center spin-and-color-invert" style="min-height: 500px;">
+                          <div class="circle-150 mb-5 d-flex justify-content-center align-items-center saci-icon-box floating-origin">
+                            <i class="bi bi-image saci-icon" style="font-size: 100px;"></i>
+                          </div>
+                          <div class="floating circle-50 bg-white text-center fw-bold font-dm-serif-display" style="position: absolute;">
+                            +7 Years
+                         </div>
+                          <h5 class="mb-5 text-uppercase fw-bold saci-title">Graphic Design</h3>
+                          <p class="saci-text">
+                            Whether you're starting a new brand, refreshing your image, or need eye-catching graphics for your projects. 
+                          </p>
+                        </div>
+
+                        <div class="col-lg-6 p-5 h-100 d-flex flex-column align-items-center spin-and-color-invert" style="min-height: 500px;">
+                          <div class="circle-150 mb-5 d-flex justify-content-center align-items-center saci-icon-box floating-origin">
+                            <i class="bi bi-search saci-icon" style="font-size: 100px;"></i>
+                          </div>
+                          <div class="floating circle-50 bg-white text-center fw-bold font-dm-serif-display" style="position: absolute;">
+                            +1 Years
+                         </div>
+                          <h5 class="mb-5 text-uppercase fw-bold saci-title">SEO Marketing</h3>
+                          <p class="saci-text">
+                            Whether it's keyword research, on-page optimization, content creation, or backlink building.
+                           </p>
+                        </div>
+
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                </div>
+
+            </section>
+
+            <section class="container-fluid py-5 bg-dark" style="min-height: 600px;">
+
+              <div class="container">
+
+                <div class="row" style="min-height: 600px;">
+
+                  <div class="col-lg-3 d-flex flex-column align-items-end justify-content-center  order-lg-2">
+                    <div class="skills-anim-box">
+                      <div class="slide-reveal-box">
+                        <h2 class="bg-yellow text-dark p-3 slide-up-reveal hide no-anim skills-anim d-inline-block" style="font-size: 75px;" class="fw-bolder">My</h2><br>
+                      </div>
+
+                      <div class="slide-reveal-box">
+                        <h2 class="font-dm-serif-display text-white skills-anim slide-down-reveal hide no-anim d-inline-block" style="font-size: 75px;" class="fw-bolder">Skills</h2>
+                      </div>
+                    </div>
+                    
+
+                    <div class="slide-reveal-box">
+                      <p class="text-white fw-bolder text-uppercase text-end skills-anim slide-down-reveal hide no-anim">What I Know</p>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-9 text-center   order-lg-1">
+
+                    <div class="row justify-content-evenly mb-5  progress-bar-box">
+
+                      <h2 class=" text-yellow mb-5">Technical skills</h2>
+                      
+                      <div class="col-3 d-flex flex-column ps-1 text-center align-items-center mb-5">
+                        <div class="circle-75 bg-dark d-flex justify-content-center align-items-center progress-bar mb-4" role="progressbar"
+                        style="background: 
+                        radial-gradient(closest-side, #120E21 79%, transparent 80% 100%),
+                        conic-gradient(#FFC80B 0%, gray 0);"
+                        data-progress=80>
+                          <img src="./images/icons8-html-48.png">
+                        </div>
+
+                        <h3 class="text-yellow mb-2">HTML</h3>
+                        <p class="text-white">80%</p>
+                      </div>
+
+                      <div class="col-3 d-flex flex-column ps-1 text-center align-items-center mb-5">
+                        <div class="circle-75 bg-dark d-flex justify-content-center align-items-center progress-bar mb-4" role="progressbar"
+                        style="background: 
+                        radial-gradient(closest-side, #120E21 79%, transparent 80% 100%),
+                        conic-gradient(#FFC80B 0%, gray 0);"
+                        data-progress=80>
+                          <img src="./images/icons8-css-48.png">
+                        </div>
+
+                        <h3 class="text-yellow mb-2">CSS</h3>
+                        <p class="text-white">80%</p>
+                      </div>
+
+                      
+
+                      <div class="col-3 d-flex flex-column ps-1 text-center align-items-center mb-5">
+                        <div class="circle-75 bg-dark d-flex justify-content-center align-items-center progress-bar mb-4" role="progressbar"
+                        style="background: 
+                        radial-gradient(closest-side, #120E21 79%, transparent 80% 100%),
+                        conic-gradient(#FFC80B 0%, gray 0);"
+                        data-progress=65>
+                          <img src="./images/icons8-javascript-48.png">
+                        </div>
+
+                        <h3 class="text-yellow mb-2">Javascript</h3>
+                        <p class="text-white">65%</p>
+                      </div>
+
+                      <div class="col-3 d-flex flex-column ps-1 text-center align-items-center mb-5">
+                        <div class="circle-75 bg-dark d-flex justify-content-center align-items-center progress-bar mb-4" role="progressbar"
+                        style="background: 
+                        radial-gradient(closest-side, #120E21 79%, transparent 80% 100%),
+                        conic-gradient(#FFC80B 0%, gray 0);"
+                        data-progress=90>
+                          <img src="./images/icons8-c-48.png">
+                        </div>
+
+                        <h3 class="text-yellow mb-2">c#</h3>
+                        <p class="text-white">90%</p>
+                      </div>
+
+                      <div class="col-3 d-flex flex-column ps-1 text-center align-items-center mb-5">
+                        <div class="circle-75 bg-dark d-flex justify-content-center align-items-center progress-bar mb-4" role="progressbar"
+                        style="background: 
+                        radial-gradient(closest-side, #120E21 79%, transparent 80% 100%),
+                        conic-gradient(#FFC80B 0%, gray 0);"
+                        data-progress=90>
+                          <img src="./images/icons8-bootstrap-48.png">
+                        </div>
+
+                        <h3 class="text-yellow mb-2">Bootstrap</h3>
+                        <p class="text-white">90%</p>
+                      </div>
+                    </div>
+
+                    <div class="row justify-content-evenly">
+
+                      <h2 class=" text-yellow mb-5 ">Software skills</h2>
+
+                        
+                        <div class="col-3 d-flex flex-column ps-1 text-center align-items-center mb-5">
+                          <div class="circle-75 bg-dark d-flex justify-content-center align-items-center progress-bar mb-4" role="progressbar"
+                          style="background: 
+                          radial-gradient(closest-side, #120E21 79%, transparent 80% 100%),
+                          conic-gradient(#FFC80B 0%, gray 0);"
+                          data-progress=80>
+                            <img src="./images/icons8-photoshop-48.png">
+                          </div>
+  
+                          <h3 class="text-yellow mb-2">Photoshop</h3>
+                          <p class="text-white">80%</p>
+                        </div>
+  
+                        <div class="col-3 d-flex flex-column ps-1 text-center align-items-center mb-5">
+                          <div class="circle-75 bg-dark d-flex justify-content-center align-items-center progress-bar mb-4" role="progressbar"
+                          style="background: 
+                          radial-gradient(closest-side, #120E21 79%, transparent 80% 100%),
+                          conic-gradient(#FFC80B 0%, gray 0);"
+                          data-progress=70>
+                            <img src="./images/icons8-illustrator-48.png">
+                          </div>
+  
+                          <h3 class="text-yellow mb-2">Illustrator</h3>
+                          <p class="text-white">70%</p>
+                        </div>
+  
+                        
+  
+                        <div class="col-3 d-flex flex-column ps-1 text-center align-items-center mb-5">
+                          <div class="circle-75 bg-dark d-flex justify-content-center align-items-center progress-bar mb-4" role="progressbar"
+                          style="background: 
+                          radial-gradient(closest-side, #120E21 79%, transparent 80% 100%),
+                          conic-gradient(#FFC80B 0%, gray 0);"
+                          data-progress=75>
+                            <img src="./images/icons8-blender-48.png">
+                          </div>
+  
+                          <h3 class="text-yellow mb-2">Blender</h3>
+                          <p class="text-white">75%</p>
+                        </div>
+  
+                        <div class="col-3 d-flex flex-column ps-1 text-center align-items-center mb-5">
+                          <div class="circle-75 bg-dark d-flex justify-content-center align-items-center progress-bar mb-4" role="progressbar"
+                          style="background: 
+                          radial-gradient(closest-side, #120E21 79%, transparent 80% 100%),
+                          conic-gradient(#FFC80B 0%, gray 0);"
+                          data-progress=70>
+                            <img src="./images/icons8-visual-studio-48.png">
+                          </div>
+  
+                          <h3 class="text-yellow mb-2">Visual Studio</h3>
+                          <p class="text-white">70%</p>
+                        </div>
+
+                        <div class="col-3 d-flex flex-column ps-1 text-center align-items-center mb-5">
+                          <div class="circle-75 bg-dark d-flex justify-content-center align-items-center progress-bar mb-4" role="progressbar"
+                          style="background: 
+                          radial-gradient(closest-side, #120E21 79%, transparent 80% 100%),
+                          conic-gradient(#FFC80B 0%, gray 0);"
+                          data-progress=80>
+                            <img src="./images/icons8-unity-48.png">
+                          </div>
+  
+                          <h3 class="text-yellow mb-2">Unity Engine</h3>
+                          <p class="text-white">80%</p>
+                        </div>
+
+                        <div class="col-3 d-flex flex-column ps-1 text-center align-items-center mb-5">
+                          <div class="circle-75 bg-dark d-flex justify-content-center align-items-center progress-bar mb-4" role="progressbar"
+                          style="background: 
+                          radial-gradient(closest-side, #120E21 79%, transparent 80% 100%),
+                          conic-gradient(#FFC80B 0%, gray 0);"
+                          data-progress=80>
+                            <img src="./images/icons8-wordpress-48.png">
+                          </div>
+  
+                          <h3 class="text-yellow mb-2">Wordpress</h3>
+                          <p class="text-white">80%</p>
+                        </div>
+  
+                        
+  
+                    </div>
+  
+                  </div>
+
+                </div>
+
+              </div>
+
+            </section>
+
+            <section class="container-fluid py-5" style="min-height: 600px;">
+
+              <div class="container">
+
+                <div class="text-center w-100 d-flex flex-column align-items-center">
+                
+                  <h1 class="font-dm-serif-display mb-3">My Portfolio</h1>
+
+                  <p class="mb-5">My Best and Latest Projects</p>
+
+                  <div class="d-flex justify-content-evenly mb-5 w-100 flex-wrap">
+
+                    <div style="max-width:400px; min-width:300px; min-height: 250px;" class="img-box d-flex align-items-center ms-2 mb-3">
+
+                      <img class="img-box-img"src="./images/Dynamix.png" style="width:100%;">
+
+                      <div class="w-100 h-100 d-flex flex-column justify-content-center align-items-center img-box-text text-white">
+                        <h4 class="text-Yellow mb-3">Dynamix Capital</h4>
+                        <p class="mb-5">Web Application for a Venture Capitalist Firm</p>
+                        <div class="d-flex justify-content-evenly w-100">
+                          <a class="btn btn-glow-sm" href="https://dynamix.net.in/" target="_blank">Visit Site</a>
+                          <a class="btn btn-glow-sm" href="./DynamixCapital.html">View Project</a>
+                        </div>
+                      </div>
+
+                    </div>
+
+                    <div style="max-width:400px; min-width:300px; min-height: 250px;" class="img-box d-flex align-items-center ms-2 mb-3">
+
+                      <img class="img-box-img"src="./images/Namsac.png" style="width:100%;">
+
+                      <div class="w-100 h-100 d-flex flex-column justify-content-center align-items-center img-box-text text-white">
+                        <h4 class="text-Yellow mb-3">Namsac Solar</h4>
+                        <p class="mb-5">A Solar Product Retail Company</p>
+                        <div class="d-flex justify-content-evenly w-100">
+                          <a class="btn btn-glow-sm" href="https://namsacsolarenergy.com/" target="_blank">Visit Site</a>
+                          <a class="btn btn-glow-sm" href="./Namsac.html">View Project</a>
+                        </div>
+                      </div>
+                      
+                    </div>
+
+                  </div>
+
+                  <p class="mb-3">Take a look at the best and most diverse projects i have worked on.</p>
+
+                  <a class="btn btn-outline-filled" href="./Portfolio.html">View My Portfolio</a>
+              
+                </div>
+
+              </div>
+              
+            </section>
+
+          </main>
+
+          <footer class="bg-dark w-100 d-flex justify-content-center py-1" style="min-height:75px">
+            <div class="container h-100" >
+
+              <div class="row align-items-center" style="min-height:75px">
+
+                <div class="col-lg-4 d-flex align-items-center h-100 justify-content-center mb-3">
+
+                  <p class="text-yellow my-auto" style="font-size: 1.8em"><span class="font-dm-serif-display">Uchenna </span> <span class="font-satisfy">Eni</span></p>
+
+                </div>
+  
+                <div class="col-lg-4 d-flex align-items-center justify-content-evenly h-100 mb-3">
+                  
+                  <a href="mailto:eniuchenna@gmail.com">eniuchenna@gmail.com</a>
+                  <a href="tel:+2348159969678">+234 815 996 9678</a>
+
+                </div>
+  
+                <div class="col-lg-4 d-flex align-items-center justify-content-evenly h-100">
+
+                  <a href="https://www.facebook.com/uchenna.eni.3" class="bg-dark mx-3 d-flex justify-content-center align-items-center btn-circle-sm" target="_blank">
+                    <i class="bi bi-facebook text-white"></i>
+                  </a>
+                  
+                  <a href="https://twitter.com/Yxng_Dxnny" class="bg-dark mx-3 d-flex justify-content-center align-items-center btn-circle-sm" target="_blank">
+                    <i class="bi bi-twitter text-white"></i>
+                  </a>
+                  
+                  <a href="https://www.linkedin.com/in/uchenna-eni-5ba349236/" class="bg-dark mx-3 d-flex justify-content-center align-items-center btn-circle-sm" target="_blank">
+                    <i class="bi bi-linkedin text-white"></i>
+                  </a>
+
+                  <a href="https://github.com/YxngDxnny" class="bg-dark mx-3 d-flex justify-content-center align-items-center btn-circle-sm" target="_blank">
+                    <i class="bi bi-github text-white"></i>
+                  </a>
+
+                </div>
+              
+              </div>
+
+            </div>
+              
+          </footer>
+
+      </div>
+
+  <script>
+    var floating = document.querySelectorAll(".floating");
+    var origin = document.querySelectorAll(".floating-origin");
+
+    function positionFloating()
+    {
+        for (let i = 0; i < floating.length; i++) {
+        floating[i].style.position = "absolute";
+        }
+
+        for (let i = 0; i < origin.length; i++) {
+
+          floating[i].style.top = (origin[i].offsetTop + (origin[i].offsetHeight*0.75)) + 'px';
+          floating[i].style.left = (origin[i].offsetLeft + (origin[i].offsetWidth*0.75)) + 'px';
+        }
+       
+        
+    }
+
+    window.addEventListener("load", positionFloating);
+    window.addEventListener("resize", positionFloating);
+
+
+</script>
+      
+    <!--<script src="./js/jquery-3.6.0.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="./js/bootstrap.js"></script>-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js" integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa" crossorigin="anonymous"></script>
+
+    <script src="./js/site.js"></script>
+  </body>
+</html>
