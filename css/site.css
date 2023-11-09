@@ -347,7 +347,7 @@
     border:solid 1px white;
     border-radius: 5px;
     width: 100px;
-    height: 25px;
+    min-height: 25px;
     font-size: 0.8em;
     transition: all .5s ease-in-out;
     display: flex;
@@ -482,6 +482,10 @@
 
   .img-box:hover .img-box-text{
     opacity: 100%;
+  }
+
+  .img-box-img{
+    border-radius: 5px;
   }
 
   .slide-up-reveal{
