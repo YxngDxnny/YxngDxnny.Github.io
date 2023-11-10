@@ -337,6 +337,7 @@
   
   .btn-glow:hover {
     color: #FFC80B;
+    background-color:#151025;
     box-shadow: 0 0 5px #FFC80B;
     text-shadow: 0 0 5px #FFC80B;
   }
@@ -603,6 +604,79 @@
   box-shadow: 5px 10px 75px -20px black ;
   transform: translateY(-25px);
 }
+
+@media (max-width: 576px) {
+  
+  .gallery{
+    min-height: 4150px;
+  }
+
+  .gallery-box{
+    width: 90%;
+  }
+}
+
+@media (min-width: 768px) {
+  
+  .gallery{
+    max-height: 4150px;
+  }
+
+  .gallery-box{
+    width: 45%;
+  }
+}
+
+@media (min-width: 992px) {
+  
+  .gallery{
+    max-height: 2950px;
+  }
+
+  .gallery-box{
+    width: 30%;
+  }
+}
+
+
+
+
+
+.gallery-box{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.gallery-btn{
+  position: absolute;
+  bottom: 0%;
+  align-self: center;
+}
+
+.gallery-img{
+  height: contain;
+}
+
+.tab{
+  color:#120E21;
+}
+
+.tab:hover{
+  color:#FFC80B !important;
+}
+
+.tab.active{
+  background-color: #FFC80B !important;
+  color: white;
+}
+
+.tab.active:hover{
+  color: white!important;
+}
+
+
 
 @keyframes noAnim {
   from {
